@@ -1,0 +1,273 @@
+/** Résolution tablette**/
+
+@media screen and (max-width: 992px) and (min-width: 767px)
+{
+
+    body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /**Header**/
+
+    header
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    header > #logo
+    {
+        width: 150px;
+    }
+
+    .navigation
+    {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .navigation > a
+    {
+        text-decoration: none;
+        color: black;
+        border-top: 0px solid transparent;
+        border-bottom: 3px solid #F2F2F2;
+        width: 50%;
+        text-align: center;
+        padding: 35px;
+    }
+
+    .navigation > a:hover
+    {
+        color: #0065FC;
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        cursor: pointer;
+    }
+
+    /**Titre + Filtres**/
+
+    main
+    {
+        margin-left: 0;
+    }
+
+    main > .titre > h2
+    {
+        font-size: 22px;
+    }
+
+    .search_bar
+    {
+        height: 50px;
+        width: 40%;
+        border: 1px solid #f2f2f2;
+        font-size: 19px;
+        font-weight: bold;
+    }
+
+    .search_button
+    {
+        height: 50px;
+        width: 130px;
+        border-radius: 0 10px 10px 0;
+    }
+
+
+    .filtres
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        padding: 15px;
+    }
+
+    .choix_filtre > h3
+    {
+        font-size: 16px;
+        padding-top: 9px;
+    }
+
+    .choix_filtre
+    {
+        margin: 0px 7px 20px 15px;
+    }
+
+    
+    .filtres > .categories_filtres
+    {
+        display: flex;
+        flex-wrap: wrap;
+        height: 110px;
+        margin-left: 0;
+    }
+
+    /**Hébergement & Les + populaires**/
+
+        
+    .search_result > h1, .titre_populaire > h1, .titre_populaire > i, .activite_bloc > h1
+    {
+        margin-bottom: 30px;
+    }
+
+    .hebergement_bloc
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .populaire
+    {
+        width: 100%;
+        border-radius: 0;
+        margin-left: 0;
+        background-color: #F2F2F2;
+        height: 100%;
+        padding: 15px;
+    }
+
+    .search_result
+    {
+        width: 100%;
+        border-radius: 0;
+        margin-right: 0;
+        padding: 15px;
+        max-height: 100%;
+        background-color: white;
+    }
+
+    /**Les + populaires**/
+
+    .titre_populaire
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        width: 94%;
+        margin-bottom: 30px;
+    }
+
+    .titre_populaire > h1 { margin : 0; }
+    .titre_populaire > i { margin :0 ;}
+
+    .populaire_result
+    {
+        width:100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populaire_carte
+    {
+       width: 30%;
+       height: 100%;
+       display: flex;
+       flex-direction: column;
+    }
+
+    .populaire_div
+{
+    width: 100%;
+}
+
+
+    .populaire_img
+    {
+        width: 100%;
+        height: 180px;
+    }
+
+    .populaire_description
+    {
+        width: 97%;
+        display: flex;
+        overflow: auto;
+        margin: 0;
+        padding: 0 0 0 15px;
+    }
+    
+    /**Hebegement**/
+
+    .search_result_1, .search_result_2
+    {
+        width: 100%;
+    }
+
+    .logement_carte
+    {
+        width: 30%;
+        height: 100%;
+        max-height: 290px;
+    }
+
+    .logement_img
+    {
+        width: 100%;
+        height: 180px;
+    }
+
+    .logement_description
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 140px;
+    }
+
+    /**Activités**/
+
+    .activite_bloc
+    {
+        margin-top: 0px;
+        padding: 15px;
+        width: 100%;
+    }
+
+    .bloc_ppl
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activite_123
+    {
+        margin-bottom: 50px;
+    }
+
+    .activite_456
+    {
+        flex-direction: row-reverse;
+    }
+    
+    /**Footer**/
+
+    footer
+    {
+        left: 0px;
+        padding-left:3%;
+        padding-top: 3%;
+        margin-top: 10px;
+    }
+
+    .footer_elmt
+    {
+        width: 50%;
+        padding-left: 2%;
+    }
+}

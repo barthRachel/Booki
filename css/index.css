@@ -1,0 +1,576 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*, ::after, ::before{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Raleway';
+    margin: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.blue-primary {
+    color: #0065fc;
+}
+  
+.blue-secondary {
+    color: #deebff;
+}
+  
+.grey-star {
+    color: #d9d9d9;
+}
+
+.bg--blue-secondary {
+    background-color: #deebff;
+}
+
+/**CSS - Header**/
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navigation > a
+{
+    text-decoration: none;
+    color: black;
+    padding: 18px 30px 29px 20px;
+}
+
+.navigation > a:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+header > #logo
+{
+    width: 100px;
+}
+
+/**CSS - Titre + Filtres**/
+
+.titre
+{
+    padding: 20px;
+    margin: 0px;
+}
+
+.titre > p
+{
+    margin-top: -15px;
+}
+
+.search_complete
+{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#search_image
+{
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#search_icon
+{
+    display: none;
+}
+
+.search_bar
+{
+    height: 50px;
+    width: 15%;
+    border: 1px solid #f2f2f2;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.search_button
+{
+    height: 50px;
+    width: 130px;
+    color: #FFF;
+    background-color: #0065FC;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: transparent;
+    font-size: 19px;
+}
+
+.search_button:hover
+{
+    cursor: pointer;
+}
+
+.filtres
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.filtres > .categories_filtres
+{
+    display: flex;
+}
+
+.filtres > h2
+{
+    font-size: 20px;
+}
+
+.choix_filtre
+{
+    border: 2px solid #d9d9d9;
+    margin-left: 35px;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    border-radius: 50px;
+    height: 50px;
+}
+
+.choix_filtre:hover
+{
+    background-color: rgba(0, 101, 252, .2);
+    cursor: pointer;
+}
+
+.choix_filtre > h3
+{
+    height: 30px;
+    padding-top:2px ;
+}
+
+.choix_filtre > i
+{
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: -10px;
+}
+
+.logement
+{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logement_p
+{
+    padding-left: 10px ;
+}
+
+.logement > i
+{
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #d9d9d9;
+}
+
+/**CSS - Hébergements**/
+
+.hebergement_bloc
+{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    padding : 20px ;
+}
+
+.search_result
+{
+    width: 70%;
+    border-radius: 20px;
+    margin-right: 15px;
+    padding: 40px;
+    background-color: #F2F2F2;
+    max-height: 100%;
+}
+
+.search_result > h1, .activite_bloc > h1
+{
+    margin-bottom: 50px;
+}
+
+.populaire
+{
+    width: 30%;
+    border-radius: 20px;
+    margin-left: 15px;
+    padding: 40px;
+    background-color: #F2F2F2;
+    max-height: 100%;
+}
+
+/**Résultat recherche**/
+
+.logement_ppl
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.search_result_1, .search_result_2
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logement_carte
+{
+    width: 30%;
+    max-height: 300px;
+    text-decoration: black;
+    color: black;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border: 5px solid white;
+}
+
+.logement_carte > div
+{
+    margin: 0;
+    border-radius: 0 0 20px 20px;
+}
+
+.logement_div
+{
+    height: 70%;
+}
+
+.logement_img
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.logement_description
+{
+    position: relative;
+    top: -50px;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.logement_description > h3, .logement_description > p, .logement_description > ul
+{
+    margin-top: 0;
+    margin-bottom: 7px;
+}
+
+.logement_description > h3
+{
+    margin-top: 10px;
+}
+
+
+.logement_carte_stars
+{
+    list-style: none;
+    padding: 0;
+}
+
+.logement_carte_stars > li
+{
+    display: inline-block;
+}
+
+.see_more > a
+{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.see_more 
+{
+    margin-bottom: 0;
+}
+
+/**Populaire**/
+
+.titre_populaire
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin-bottom: 30px;
+}
+
+.titre_populaire > i
+{
+    font-size: 25px;
+}
+
+.populaire_result
+{
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.populaire_carte 
+{
+    display: flex;
+    background-color: white;
+    border: 4px solid white;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.populaire_carte > div
+{
+    margin: 0;
+    border-radius: 20px 0 0 20px;
+}
+
+.populaire_div
+{
+    width: 40%;
+}
+
+.populaire_img
+{
+    position: relative;
+    top: 2px;
+    width: 100%;
+    height: 150px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.populaire_description
+{
+    background-color: white;
+    border-radius: 0 20px 20px 0;
+    padding-left: 20px;
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.populaire_description > .populaire_description_titre > h3
+{ 
+    margin-bottom: 2px;
+}
+
+.populaire_description > .populaire_description_titre > p
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.populaire_carte_stars
+{
+    list-style: none;
+    padding: 0;
+    position: relative;
+    bottom: 0px;
+}
+
+.populaire_carte_stars > li
+{
+    display: inline-block;
+}
+
+/**CSS - Activités**/
+
+.activite_bloc
+{
+    margin-top: 70px;
+    width: 100%;
+    padding: 40px;
+}
+
+.activite_bloc > h1
+{
+    padding: 20px;
+}
+
+.bloc_ppl
+{
+    display: flex;
+    max-height: 100%;
+    padding-right: 10px;
+    margin-left: 0;
+    width: 100%;
+}
+
+.activite_carte
+{
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+}
+
+.activite_div
+{
+    margin: 0;
+}
+
+.activite_img
+{
+    position: relative;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.activite2, .activite6
+{
+    height: 270px ;
+}
+
+.activite3, .activite5
+{
+    height: 220px;
+}
+
+.activite6, .activite3
+{
+    position: relative;
+    top: 11.5%;
+}
+
+.activite3 > a > div > img, .activite5 > a > div > img
+{
+    height: 150px;
+    max-height: 100%;
+    width: 100%;
+}
+
+.activite2 > a > div > img, .activite6 > a > div > img
+{
+    height: 200px;
+    max-height: 100%;
+    width: 100%;
+}
+
+.activite_titre
+{
+    margin: 20px;
+}
+
+.activite1, .activite2, .activite3, .activite4, .activite5, .activite6
+{
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.activite1 > a > div > img, .activite4 > a > div > img
+{
+    height: 490px;
+    max-height: 100%;
+    width: 100%;
+}
+
+.activite1, .activite4
+{
+    height: 560px;
+}
+
+.activite1, .activite4, .activite_23, .activite_56
+{
+    padding: 20px;
+    width: 100%;
+}
+
+.activite_123, .activite_456
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+/**CSS - Footer**/
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    margin-top: 70px;
+    position: relative;
+    width: 100%;
+    padding-left:40px;
+    padding-bottom: 1.5%;
+}
+
+.footer_elmt
+{
+    width: 33%;
+}
+
+.footer_elmt > ul
+{
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer_elmt > ul > li
+{
+    margin-bottom: 10px ;
+}
+
+.footer_elmt > h3
+{
+    font-weight: bold;
+}
+
