@@ -1,4 +1,4 @@
-# P1 - Parcours développeur Web OpenClassrooms - "Booki"
+# P1 - Parcours Dev Web OpenClassrooms - "Booki"
 
 ### Réalisation 
 
