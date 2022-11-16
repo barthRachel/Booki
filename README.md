@@ -1,6 +1,6 @@
 # P1 - Parcours Dev Web OpenClassrooms - "Booki"
 
-### Réalisation 
+### Réalisation - "Transformez une maquette en site web avec HTML & CSS"
 
 - [Site Booki](https://barthrachel.github.io/Booki/)
 
